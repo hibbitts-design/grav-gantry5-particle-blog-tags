@@ -1,0 +1,11 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% block particle %}
+{% if config.plugins.taxonomylist.enabled and particle.blog_root in page.route  %}
+  <div class="blog_tags {{ particle.css.class }}">
+  {% set new_base_url = base_url_relative ~ "/" ~ particle.blog_root %}
+  <h4>{{particle.header_text}}</h4>
+  {% include 'partials/taxonomylist.html.twig' with {'base_url':new_base_url, 'taxonomy':'tag'} %}
+  </div>
+{% endif %}
+{% endblock %}

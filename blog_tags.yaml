@@ -1,0 +1,37 @@
+name: Blog Tags
+description: Blog Tags for Grav Taxonomy Plugin
+type: particle
+
+dependencies:
+  platform:
+    grav:
+      plugin:
+        taxonomylist: true
+
+form:
+  fields:
+    enabled:
+      type: checkbox
+      label: Enabled
+      description: Globally enable Tag particles.
+      default: true
+
+    header_text:
+      type: input.text
+      size: medium
+      label: Header
+      default: 'Popular Tags'
+      help: Enter the header text.
+      description: Enter the header text.
+      validate:
+          type: text
+
+    blog_root:
+      type: input.text
+      size: medium
+      label: Blog Root
+      default: 'blog'
+      help: Enter the blog page for the site.
+      description: Enter the blog page for the site.
+      validate:
+          type: text
