@@ -9,6 +9,9 @@ Particles are small, modular blocks with preset scripting that enable you to add
 3. If a `particles` folder already exists within the `custom` folder open it, otherwise create it.
 4. Upload `blog_tags.html.twig` and `blog_tags.yaml` files into the `/custom/particles` folder. For example, if you are using the Helium theme copy the two particle files into `/user/themes/g5_helium/custom/particles`.
 
+## Particle Requirements
+Grav [Taxonomy List](https://getgrav.org/downloads/plugins) Plugin
+
 ## Particle Options
 !['Blog Tags' options](https://github.com/paulhibbitts/github-repo-images/blob/master/blog-tags-options.png?raw=true)
 
